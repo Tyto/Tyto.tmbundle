@@ -131,7 +131,7 @@
 		<key>illegal</key>
 		<dict>
 			<key>match</key>
-			<string>[^\s,][\s\S]*</string>
+			<string>[^\s,].*</string>
 			<key>name</key>
 			<string>invalid.illegal.tyto</string>
 		</dict>
