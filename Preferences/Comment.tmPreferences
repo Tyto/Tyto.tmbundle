@@ -3,17 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Folding</string>
+	<string>Comment</string>
 	<key>scope</key>
 	<string>text.tyto</string>
 	<key>settings</key>
 	<dict>
-		<key>foldingStartMarker</key>
-		<string>[\[{(]\s*(##.*)?$</string>
-		<key>foldingStopMarker</key>
-		<string>^\s*[\]})]</string>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_COMMENT_START</string>
+				<key>value</key>
+				<string>## </string>
+			</dict>
+		</array>
 	</dict>
 	<key>uuid</key>
-	<string>5FD137D7-B4F2-46BB-BB5E-00E801B1EDAE</string>
+	<string>72C2BAA6-10AB-4219-B8B8-A8FF7A4D9761</string>
 </dict>
 </plist>

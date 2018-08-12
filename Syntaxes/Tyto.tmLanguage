@@ -20,6 +20,10 @@
 			<key>include</key>
 			<string>#inline</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#comment</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -56,6 +60,13 @@
 			<string>\.(?:true|false)\b</string>
 			<key>name</key>
 			<string>constant.language.boolean.tyto</string>
+		</dict>
+		<key>comment</key>
+		<dict>
+			<key>match</key>
+			<string>##.*$</string>
+			<key>name</key>
+			<string>comment.line.number-sign.tyto</string>
 		</dict>
 		<key>date</key>
 		<dict>
@@ -103,6 +114,10 @@
 				<dict>
 					<key>include</key>
 					<string>#dictionary-key</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#comment</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -228,6 +243,10 @@
 			<string>meta.array.list.tyto</string>
 			<key>patterns</key>
 			<array>
+				<dict>
+					<key>include</key>
+					<string>#comment</string>
+				</dict>
 				<dict>
 					<key>include</key>
 					<string>#values</string>
@@ -525,6 +544,10 @@
 					<string>meta.structure.tagged-union.tyto</string>
 					<key>patterns</key>
 					<array>
+						<dict>
+							<key>include</key>
+							<string>#comment</string>
+						</dict>
 						<dict>
 							<key>include</key>
 							<string>#values</string>
