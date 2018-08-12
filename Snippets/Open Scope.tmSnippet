@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>
+	$0
+</string>
+	<key>keyEquivalent</key>
+	<string></string>
+	<key>name</key>
+	<string>Open Scope</string>
+	<key>scope</key>
+	<string>L:punctuation.definition.arguments.begin.tyto &amp; punctuation.definition.arguments.end.tyto, L:punctuation.definition.array.begin.tyto &amp; punctuation.definition.array.end.tyto, L:punctuation.definition.dictionary.begin.tyto &amp; punctuation.definition.dictionary.end.tyto</string>
+	<key>uuid</key>
+	<string>50FC4910-C935-4E10-B014-CB6A85E0AD47</string>
+</dict>
+</plist>
