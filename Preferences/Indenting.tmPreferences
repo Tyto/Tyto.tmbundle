@@ -8,8 +8,10 @@
 	<string>text.tyto</string>
 	<key>settings</key>
 	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>^\s*(?:"""|```)$</string>
 		<key>increaseIndentPattern</key>
-		<string>(?:[\[{(]|"""|```)$</string>
+		<string>(?:[\[{(]|^\s*\S.*(?:"""|```))$</string>
 	</dict>
 	<key>uuid</key>
 	<string>39D63F21-EDF0-4A48-A303-ACC3D3207785</string>
