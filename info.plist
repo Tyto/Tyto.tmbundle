@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>sybevna@glgb-qbp.bet</string>
+	<key>contactName</key>
+	<string>Florian Pircher</string>
+	<key>description</key>
+	<string>Support for the &lt;a href="https://tyto-doc.org"&gt;Tyto&lt;/a&gt; document markup language.</string>
+	<key>name</key>
+	<string>Tyto</string>
+	<key>uuid</key>
+	<string>DF5275DA-4740-408D-A279-2FA15C1C93CD</string>
+</dict>
+</plist>
