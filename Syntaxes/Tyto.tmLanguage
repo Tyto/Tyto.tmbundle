@@ -67,7 +67,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\\[a-zA-Z\-]+)(\[.*\])?(?=\{\s*(?:##.*)?$)</string>
+					<string>(\\[a-zA-Z\-]+)(\[.*\])?(?=(\{|```)\s*(?:##.*)?$)</string>
 				</dict>
 				<key>marker-head-arguments-multiline</key>
 				<dict>
@@ -87,7 +87,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(\])?(?=\{\s*(?:##.*)?$)</string>
+					<string>(\])(?=(\{|```)?\s*(?:##.*)?$)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
