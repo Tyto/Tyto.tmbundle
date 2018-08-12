@@ -35,9 +35,75 @@
 					<key>include</key>
 					<string>#metadata</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#marker-head-arguments-multiline</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#marker-head-arguments</string>
+				</dict>
 			</array>
 			<key>repository</key>
 			<dict>
+				<key>marker-head-arguments</key>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.tag.block.tyto</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>patterns</key>
+							<array>
+								<dict>
+									<key>include</key>
+									<string>#dictionary</string>
+								</dict>
+							</array>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\\[a-zA-Z\-]+)(\[.*\])?(?=\{\s*(?:##.*)?$)</string>
+				</dict>
+				<key>marker-head-arguments-multiline</key>
+				<dict>
+					<key>begin</key>
+					<string>(\\[a-zA-Z\-]+)(\[)(?=\s*(?:##.*)?$)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.tag.block.tyto</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.arguments.begin.tyto</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\])?(?=\{\s*(?:##.*)?$)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.arguments.begin.tyto</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#dictionary-body</string>
+						</dict>
+					</array>
+				</dict>
 				<key>metadata</key>
 				<dict>
 					<key>begin</key>
