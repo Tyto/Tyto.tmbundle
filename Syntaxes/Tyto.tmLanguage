@@ -6,6 +6,8 @@
 	<array>
 		<string>tyto</string>
 	</array>
+	<key>firstLineMatch</key>
+	<string>##</string>
 	<key>keyEquivalent</key>
 	<string>^~T</string>
 	<key>name</key>
