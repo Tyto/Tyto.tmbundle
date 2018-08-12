@@ -109,9 +109,25 @@
 				<key>metadata</key>
 				<dict>
 					<key>begin</key>
-					<string>\A\s*\[</string>
+					<string>\A\s*(\[)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.dictionary.begin.tyto</string>
+						</dict>
+					</dict>
 					<key>end</key>
 					<string>\]</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.dictionary.end.tyto</string>
+						</dict>
+					</dict>
 					<key>patterns</key>
 					<array>
 						<dict>
