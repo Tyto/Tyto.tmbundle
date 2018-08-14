@@ -433,7 +433,7 @@
 				<key>string-escape-symbol</key>
 				<dict>
 					<key>match</key>
-					<string>\\[\\nr]</string>
+					<string>\\[\\nrt]</string>
 					<key>name</key>
 					<string>constant.character.escape.symbol.tyto</string>
 				</dict>
@@ -447,7 +447,7 @@
 				<key>string-escape-unicode</key>
 				<dict>
 					<key>match</key>
-					<string>\\u\{[0-9A-F]+\}</string>
+					<string>\\u\[[0-9A-F]+\]</string>
 					<key>name</key>
 					<string>constant.character.escape.unicode.tyto</string>
 				</dict>
