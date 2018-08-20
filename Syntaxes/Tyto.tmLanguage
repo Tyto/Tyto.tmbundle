@@ -59,6 +59,11 @@
 						</dict>
 						<key>2</key>
 						<dict>
+							<key>name</key>
+							<string>entity.other.attribute-name.reference.tyto</string>
+						</dict>
+						<key>3</key>
+						<dict>
 							<key>patterns</key>
 							<array>
 								<dict>
@@ -69,12 +74,12 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\\[a-zA-Z\-]+)(\[.*\])?(?=(\{|```)\s*(?:##.*)?$)</string>
+					<string>(\\[a-zA-Z\-][a-zA-Z0-9\-]*)(\*[a-zA-Z\-][a-zA-Z0-9\-]*)?(\[.*\])?(?=(\{|```)\s*(?:##.*)?$)</string>
 				</dict>
 				<key>marker-head-arguments-multiline</key>
 				<dict>
 					<key>begin</key>
-					<string>(\\[a-zA-Z\-]+)(\[)(?=\s*(?:##.*)?$)</string>
+					<string>(\\[a-zA-Z\-][a-zA-Z0-9\-]*)(\*[a-zA-Z\-][a-zA-Z0-9\-]*)?(\[)(?=\s*(?:##.*|[\[(]+)?$)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -83,6 +88,11 @@
 							<string>entity.name.tag.block.tyto</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.other.attribute-name.reference.tyto</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>punctuation.definition.arguments.begin.tyto</string>
@@ -225,7 +235,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b([a-zA-Z\-]+)(:)</string>
+			<string>\b([a-zA-Z\-][a-zA-Z0-9\-]*)(:)</string>
 		</dict>
 		<key>illegal</key>
 		<dict>
@@ -260,14 +270,14 @@
 				<key>marker-head</key>
 				<dict>
 					<key>match</key>
-					<string>\\[a-zA-Z\-]+</string>
+					<string>\\[a-zA-Z\-][a-zA-Z0-9\-]*</string>
 					<key>name</key>
 					<string>support.function.marker.tyto</string>
 				</dict>
 				<key>marker-head-arguments</key>
 				<dict>
 					<key>begin</key>
-					<string>(\\[a-zA-Z\-]+)(\[)</string>
+					<string>(\\[a-zA-Z\-][a-zA-Z0-9\-]*)(\[)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -367,6 +377,13 @@
 					<string>constant.numeric.integer.decimal.tyto</string>
 				</dict>
 			</dict>
+		</dict>
+		<key>reference</key>
+		<dict>
+			<key>match</key>
+			<string>\*[a-zA-Z\-][a-zA-Z0-9\-]*</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.reference.tyto</string>
 		</dict>
 		<key>string</key>
 		<dict>
@@ -606,14 +623,14 @@
 				<key>tag</key>
 				<dict>
 					<key>match</key>
-					<string>\.[a-zA-Z\-]+</string>
+					<string>\.[a-zA-Z\-][a-zA-Z0-9\-]*</string>
 					<key>name</key>
 					<string>constant.other.symbol.tagged-union.tag.tyto</string>
 				</dict>
 				<key>tagged-list</key>
 				<dict>
 					<key>begin</key>
-					<string>(\.[a-zA-Z\-]+)(\()</string>
+					<string>(\.[a-zA-Z\-][a-zA-Z0-9\-]*)(\()</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -738,7 +755,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#illegal</string>
+					<string>#reference</string>
 				</dict>
 			</array>
 		</dict>
